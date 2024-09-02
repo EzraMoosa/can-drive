@@ -1,3 +1,6 @@
+import sys
+
+
 class Adult:
 
     """Class for Adult"""
@@ -64,7 +67,7 @@ def main():
                 person = Child(name, age, hair_colour, eye_colour)
 
             person.can_drive()
-            break
+            sys.exit()
 
         except ValueError:
             print("Invalid input! Try again.")
